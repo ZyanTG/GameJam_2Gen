@@ -27,11 +27,14 @@ public class ChageBackground : MonoBehaviour
     }
     IEnumerator modifyBackground()
     {
-        while (true)
-        {
+
+        background1.SetActive(false);
+        background2.SetActive(true);
+        //while (true)
+        //{
             //int randomNum = Random.range(5,10);
             yield return new WaitForSeconds(watingTime);
-            if (background1.activeSelf)
+            /*if (background1.activeSelf)
             {
                 background1.SetActive(false);
                 background2.SetActive(true);
@@ -40,9 +43,9 @@ public class ChageBackground : MonoBehaviour
             {
                 background1.SetActive(true);
                 background2.SetActive(false);
-            }
+            }*/
                 
-        }
+       // }
         
         
         //TO set an if where the background1 will be disable and the background2 enabled 

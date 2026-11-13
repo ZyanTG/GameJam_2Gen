@@ -6,8 +6,9 @@ public class SelectedTarget : MonoBehaviour
     public ParticleSystem  particleSystem;
 
 
-   private GameManager gameManager;
+    private GameManager gameManager;
 
+    
     public int pointValue; // Variable para marcar los puntos
     // Start is called once before the first execution of Update after the MonoBehaviour is create
     
