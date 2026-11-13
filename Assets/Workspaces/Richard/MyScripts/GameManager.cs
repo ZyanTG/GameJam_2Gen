@@ -5,7 +5,10 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     int scorePunt;
+   
     public TextMeshProUGUI score; 
+
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +26,8 @@ public class GameManager : MonoBehaviour
         scorePunt += myScore;
         score.text = "Score: " + scorePunt;
     }
+
+   
     
 
     
