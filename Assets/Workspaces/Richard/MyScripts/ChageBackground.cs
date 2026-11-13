@@ -9,6 +9,8 @@ public class ChageBackground : MonoBehaviour
     public GameObject background1;
     public GameObject background2;
     public float watingTime;
+
+    private Coroutine coroutine;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,12 +20,17 @@ public class ChageBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (SelectedTarget.touchBomb)
+        {
+            StopCoroutine(coroutine);
+            Debug.Log("You lose");
+        }
     }
 
     public void ChangeBackground()
     {
-        StartCoroutine(modifyBackground());
+        coroutine = StartCoroutine(modifyBackground());
+        
     }
     IEnumerator modifyBackground()
     {

@@ -9,6 +9,8 @@ public class SelectedTarget : MonoBehaviour
     private GameManager gameManager;
     private Rigidbody rigidbody;
 
+    public static bool touchBomb;
+
     
     public int pointValue; // Variable para marcar los puntos
     // Start is called once before the first execution of Update after the MonoBehaviour is create
@@ -17,6 +19,7 @@ public class SelectedTarget : MonoBehaviour
     {
         rigidbody = gameObject.GetComponent<Rigidbody>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        touchBomb = false;
     }
 
     void Start()
@@ -42,6 +45,11 @@ public class SelectedTarget : MonoBehaviour
                 {
                     Instantiate(particleSystem,transform.position,particleSystem.transform.rotation);
                     gameManager.UpdateScore(pointValue);
+                    if (gameObject.tag == "Bomb")
+                    {
+                        touchBomb = true;
+                    }
+                    
                     Destroy(gameObject);
                 }
             }
