@@ -1,14 +1,22 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class SelectTarget : MonoBehaviour
+
+public class SelectedTarget : MonoBehaviour
 {
-    public ParticleSystem particleSystem;
-    private GameManager gameManager;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public ParticleSystem  particleSystem;
+
+
+   private GameManager gameManager;
+
+    public int pointValue; // Variable para marcar los puntos
+    // Start is called once before the first execution of Update after the MonoBehaviour is create
+    
+    void Awake()
     {
         
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
+   
 
     // Update is called once per frame
     void Update()
@@ -24,10 +32,10 @@ public class SelectTarget : MonoBehaviour
                 if(hit.transform == transform)
                 {
                     Instantiate(particleSystem,transform.position,particleSystem.transform.rotation);
-                    //gameManager.UpdateScore(pointValue);
+                   gameManager.UpdateScore(pointValue);
                     Destroy(gameObject);
                 }
             }
-        }
     }
+}
 }

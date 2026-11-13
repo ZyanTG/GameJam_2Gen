@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 651310297}
   - component: {fileID: 651310296}
   - component: {fileID: 651310295}
-  - component: {fileID: 651310294}
+  - component: {fileID: 651310299}
   m_Layer: 0
   m_Name: TestObject
   m_TagString: Untagged
@@ -266,19 +266,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &651310294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651310293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3b9d1034418d9f4cac6124771a2aced, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SelectTarget
-  particleSystem: {fileID: 4758139293545943008, guid: c7ad2532a6eeb40b59033c75e71fa054, type: 3}
 --- !u!65 &651310295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -372,6 +359,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &651310299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651310293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27498b69cea73e14fb895b6d094c8dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectedTarget
 --- !u!1 &1119621368
 GameObject:
   m_ObjectHideFlags: 0
