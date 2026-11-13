@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using Unity.Mathematics;
+
 
 public class ChageBackground : MonoBehaviour
 {
