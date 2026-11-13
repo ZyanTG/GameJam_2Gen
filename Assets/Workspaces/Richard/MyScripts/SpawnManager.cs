@@ -31,8 +31,7 @@ public class SpawnManager : MonoBehaviour
             yield return new WaitForSeconds(watingTime);
             
             int myIndex = Random.Range(0,objetos.Count);
-            Instantiate(objetos[myIndex],new Vector3(Random.Range(-9f,9f),Random.Range(-4f,5.5f),objetos[myIndex].transform.position.z),objetos[myIndex].transform.rotation);
-            //UpdateScore(1);
+            Instantiate(objetos[myIndex]);
         }
         
     }

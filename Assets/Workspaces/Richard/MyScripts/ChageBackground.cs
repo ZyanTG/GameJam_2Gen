@@ -27,13 +27,13 @@ public class ChageBackground : MonoBehaviour
     }
     IEnumerator modifyBackground()
     {
-
+        yield return new WaitForSeconds(watingTime);
         background1.SetActive(false);
         background2.SetActive(true);
         //while (true)
         //{
             //int randomNum = Random.range(5,10);
-            yield return new WaitForSeconds(watingTime);
+           
             /*if (background1.activeSelf)
             {
                 background1.SetActive(false);

@@ -7,6 +7,7 @@ public class SelectedTarget : MonoBehaviour
 
 
     private GameManager gameManager;
+    private Rigidbody rigidbody;
 
     
     public int pointValue; // Variable para marcar los puntos
@@ -14,8 +15,15 @@ public class SelectedTarget : MonoBehaviour
     
     void Awake()
     {
-        
+        rigidbody = gameObject.GetComponent<Rigidbody>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+
+    void Start()
+    {
+        rigidbody.AddForce(Vector3.up*Random.Range(12,15),ForceMode.Impulse);
+        rigidbody.AddTorque(Random.Range(5,9),Random.Range(5,8),Random.Range(-12,16),ForceMode.Impulse);
+        transform.position = new Vector3(Random.Range(-9,9),-6,-1);
     }
    
 
