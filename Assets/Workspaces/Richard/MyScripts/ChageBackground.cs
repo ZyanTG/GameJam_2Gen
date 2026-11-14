@@ -11,6 +11,8 @@ public class ChageBackground : MonoBehaviour
     public float watingTime;
 
     private Coroutine coroutine;
+
+    public GameObject gameOver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +25,8 @@ public class ChageBackground : MonoBehaviour
         if (SelectedTarget.touchBomb)
         {
             StopCoroutine(coroutine);
-            Debug.Log("You lose");
+            gameOver.SetActive(true);
+            //Debug.Log("You lose");
         }
     }
 
@@ -34,14 +37,15 @@ public class ChageBackground : MonoBehaviour
     }
     IEnumerator modifyBackground()
     {
-        yield return new WaitForSeconds(watingTime);
-        background1.SetActive(false);
-        background2.SetActive(true);
-        //while (true)
-        //{
-            //int randomNum = Random.range(5,10);
-           
-            /*if (background1.activeSelf)
+        
+        /*background1.SetActive(false);
+        background2.SetActive(true);*/
+        SpawnManager.watingTime = SpawnManager.watingTime*0.1f;
+        while (true)
+        {
+            int randomNum = Random.Range(5,20);
+            yield return new WaitForSeconds(randomNum);
+            if (background1.activeSelf)
             {
                 background1.SetActive(false);
                 background2.SetActive(true);
@@ -50,9 +54,9 @@ public class ChageBackground : MonoBehaviour
             {
                 background1.SetActive(true);
                 background2.SetActive(false);
-            }*/
+            }
                 
-       // }
+        }
         
         
         //TO set an if where the background1 will be disable and the background2 enabled 

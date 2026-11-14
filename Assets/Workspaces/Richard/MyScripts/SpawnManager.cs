@@ -3,16 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 
 public class SpawnManager : MonoBehaviour
 {
 
     public List <GameObject> objetos;
-    public float watingTime = 1f;
+    public static float watingTime = 1f;
     
     private Coroutine coroutine; 
 
+    public GameObject GameOver;
+
+  
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,11 +48,21 @@ public class SpawnManager : MonoBehaviour
         }
         
     }
-    public void StartGame()
+    public   void  StartGame()
     {
        coroutine =  StartCoroutine(SpawnObjects());
        
     }
+
+    public void ResetLevel()
+    {
+        SelectedTarget.touchBomb = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+        
+            
+    }
+
 
 
 }

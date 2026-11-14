@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
         score.text = "Score: " + scorePunt;
     }
 
+    
    
     
 
