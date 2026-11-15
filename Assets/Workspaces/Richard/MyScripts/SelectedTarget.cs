@@ -45,10 +45,15 @@ public class SelectedTarget : MonoBehaviour
                 {
                     Instantiate(particleSystem,transform.position,particleSystem.transform.rotation);
                     gameManager.UpdateScore(pointValue);
-                    if (gameObject.tag == "Bomb")
+                    if (gameObject.tag == "Bomb" )// Terminacion por bomba
                     {
                         touchBomb = true;
                     }
+                    if(GameManager.scorePunt < 0) //Terminacion por puntos 
+                    {
+                        touchBomb = true;
+                    }
+
                     
                     Destroy(gameObject);
                 }
