@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corrupt_object Variant 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4499285716807864586, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
+      propertyPath: pointValue
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7399050062596474191, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}

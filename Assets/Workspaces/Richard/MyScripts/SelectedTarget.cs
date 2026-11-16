@@ -10,7 +10,9 @@ public class SelectedTarget : MonoBehaviour
     private Rigidbody rigidbody;
 
     public static bool touchBomb;
-
+    //Variables for audio
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     
     public int pointValue; // Variable para marcar los puntos
     // Start is called once before the first execution of Update after the MonoBehaviour is create
@@ -25,8 +27,8 @@ public class SelectedTarget : MonoBehaviour
     void Start()
     {
         rigidbody.AddForce(Vector3.up*Random.Range(12,15),ForceMode.Impulse);
-        rigidbody.AddTorque(Random.Range(5,9),Random.Range(5,8),Random.Range(-12,16),ForceMode.Impulse);
-        transform.position = new Vector3(Random.Range(-9,9),-6,-1);
+        rigidbody.AddTorque(0,2,0,ForceMode.Impulse);
+        transform.position = new Vector3(Random.Range(-8,8),-2,-2);
     }
    
 
@@ -45,6 +47,7 @@ public class SelectedTarget : MonoBehaviour
                 {
                     Instantiate(particleSystem,transform.position,particleSystem.transform.rotation);
                     gameManager.UpdateScore(pointValue);
+                    audioSource.PlayOneShot(audioClip);
                     if (gameObject.tag == "Bomb" )// Terminacion por bomba
                     {
                         touchBomb = true;
