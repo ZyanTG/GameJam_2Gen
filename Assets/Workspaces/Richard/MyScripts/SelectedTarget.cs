@@ -11,8 +11,7 @@ public class SelectedTarget : MonoBehaviour
 
     public static bool touchBomb;
     //Variables for audio
-    public AudioSource audioSource;
-    public AudioClip audioClip;
+    private AudioManager audioManager;
     
     public int pointValue; // Variable para marcar los puntos
     // Start is called once before the first execution of Update after the MonoBehaviour is create
@@ -22,6 +21,7 @@ public class SelectedTarget : MonoBehaviour
         rigidbody = gameObject.GetComponent<Rigidbody>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         touchBomb = false;
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     void Start()
@@ -47,11 +47,23 @@ public class SelectedTarget : MonoBehaviour
                 {
                     Instantiate(particleSystem,transform.position,particleSystem.transform.rotation);
                     gameManager.UpdateScore(pointValue);
-                    audioSource.PlayOneShot(audioClip);
-                    if (gameObject.tag == "Bomb" )// Terminacion por bomba
+                    
+                    if(gameObject.tag == "GoodObject")
                     {
+                        audioManager.PlayGoodObjectHit01();
+                    }
+
+                    else if (gameObject.tag == "Bomb" )// Terminacion por bomba
+                    {
+                        audioManager.PlayBombHit();
                         touchBomb = true;
                     }
+
+                    else
+                    {
+                        audioManager.PlayBadObjectHit();
+                    }
+
                     if(GameManager.scorePunt < 0) //Terminacion por puntos 
                     {
                         touchBomb = true;

@@ -12,7 +12,7 @@ public class VolumenMusica : MonoBehaviour
     void Start()
     {
         // 0.7 = 70% la primera vez
-        float volumen = PlayerPrefs.GetFloat("volumenMusica", 0.7f);
+        float volumen = PlayerPrefs.GetFloat("volumenMusica", 0.4f);
 
         if (musica != null)
         {
