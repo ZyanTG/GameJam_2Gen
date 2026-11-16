@@ -128,7 +128,6 @@ GameObject:
   - component: {fileID: 1006106590507664895}
   - component: {fileID: 4003758241981458956}
   - component: {fileID: 4419377494835719746}
-  - component: {fileID: 1875951966698645912}
   m_Layer: 0
   m_Name: Good_object
   m_TagString: Untagged
@@ -200,17 +199,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 10
   m_CollisionDetection: 0
---- !u!114 &1875951966698645912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2667231878193980578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27498b69cea73e14fb895b6d094c8dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SelectedTarget
-  particleSystem: {fileID: 1206498299807332549, guid: af6c1e3f046eecd4d81330aeb285600f, type: 3}
-  pointValue: 0
