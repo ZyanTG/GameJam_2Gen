@@ -40,20 +40,24 @@ public class ChageBackground : MonoBehaviour
         
         /*background1.SetActive(false);
         background2.SetActive(true);*/
-        SpawnManager.watingTime = SpawnManager.watingTime*0.1f;
+        //ACa se comento para hacer una prueba del spawn
+        //SpawnManager.watingTime = SpawnManager.watingTime*0.1f;
         while (true)
         {
             int randomNum = Random.Range(5,20);
             yield return new WaitForSeconds(randomNum);
+           
             if (background1.activeSelf)
             {
                 background1.SetActive(false);
                 background2.SetActive(true);
+                SpawnManager.watingTime = 0.5f; //Cambiado el tiempo para cuando cambie
             }
             else
             {
                 background1.SetActive(true);
                 background2.SetActive(false);
+                SpawnManager.watingTime = 1f; //Cambiado el tiempo para cuando cambie
             }
                 
         }
