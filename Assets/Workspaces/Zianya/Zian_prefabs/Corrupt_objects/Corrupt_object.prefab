@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectedTarget
   particleSystem: {fileID: 1206498299807332549, guid: af6c1e3f046eecd4d81330aeb285600f, type: 3}
-  pointValue: 0
+  pointValue: -5
 --- !u!1 &7399050062596474191
 GameObject:
   m_ObjectHideFlags: 0
