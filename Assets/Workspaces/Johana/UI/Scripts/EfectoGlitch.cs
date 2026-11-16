@@ -33,7 +33,7 @@ public class EfectoGlitch : MonoBehaviour
 
         while (t < duracion)
         {
-            t = t + Time.deltaTime;
+            t = t + Time.unscaledDeltaTime; // unscaled para que no se quede pegado en pausa
             // valores random para que tiemble
             aberracion.intensity.value = Random.Range(0.4f, 1f);
             distorsion.intensity.value = Random.Range(-0.45f, 0.45f);

@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 // el boton se agranda un poquito cuando paso el mouse
-public class BotonAnimado : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+// y suena el clic del audio manager de ana
+public class BotonAnimado : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     public float grande = 1.08f;
 
@@ -29,5 +30,15 @@ public class BotonAnimado : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerExit(PointerEventData eventData)
     {
         tamanoQueQuiero = tamanoNormal;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        // busco el audio manager que este en la escena
+        AudioManager audio = FindFirstObjectByType<AudioManager>();
+        if (audio != null)
+        {
+            audio.PlayUIClick();
+        }
     }
 }

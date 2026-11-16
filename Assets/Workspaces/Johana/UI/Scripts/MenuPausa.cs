@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
@@ -64,6 +65,15 @@ public class MenuPausa : MonoBehaviour
         Time.timeScale = 1;
         SelectedTarget.touchBomb = false;
         SpawnManager.watingTime = 1f; // lo dejo como al inicio
-        SceneManager.LoadScene(escenaMenu);
+        GameManager.scorePunt = 0;
+        StartCoroutine(CargarEscena(escenaMenu));
+    }
+
+    // espero un poquito para que se alcance a oir el clic
+    // (realtime para que funcione aunque el juego este en pausa)
+    IEnumerator CargarEscena(string nombre)
+    {
+        yield return new WaitForSecondsRealtime(0.25f);
+        SceneManager.LoadScene(nombre);
     }
 }
