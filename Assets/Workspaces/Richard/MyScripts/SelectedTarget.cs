@@ -10,7 +10,9 @@ public class SelectedTarget : MonoBehaviour
     private Rigidbody rigidbody;
 
     public static bool touchBomb;
-
+    //Variables for audio
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     
     public int pointValue; // Variable para marcar los puntos
     // Start is called once before the first execution of Update after the MonoBehaviour is create
@@ -45,6 +47,7 @@ public class SelectedTarget : MonoBehaviour
                 {
                     Instantiate(particleSystem,transform.position,particleSystem.transform.rotation);
                     gameManager.UpdateScore(pointValue);
+                    audioSource.PlayOneShot(audioClip);
                     if (gameObject.tag == "Bomb" )// Terminacion por bomba
                     {
                         touchBomb = true;
