@@ -70,6 +70,7 @@ public class HUDJuego : MonoBehaviour
         }
 
         // la barrita se va vaciando
+        tiempoMaximo = ChageBackground.randomNum;//agregado el tiempo para que sea aleatorio
         tiempo = tiempo + Time.deltaTime;
         float lleno = 1f - tiempo / tiempoMaximo;
         if (lleno < 0.08f)

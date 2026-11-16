@@ -48,9 +48,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1554766660679513648, guid: 3cb9a7ee8f1ede342bc24ccf758113e5, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b1b3c12102e0b6449fb84c34e005a6d, type: 3}
     - target: {fileID: 9067550515760284584, guid: 3cb9a7ee8f1ede342bc24ccf758113e5, type: 3}
       propertyPath: m_Name
-      value: BadTestObject (1)
+      value: BadTestObject (1) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

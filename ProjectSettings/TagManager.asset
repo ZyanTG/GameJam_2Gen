@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Bomb
+  - FxTemporaire
+  - GoodObject
   layers:
   - Default
   - TransparentFX
