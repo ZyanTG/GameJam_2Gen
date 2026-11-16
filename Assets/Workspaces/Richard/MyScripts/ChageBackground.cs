@@ -13,6 +13,8 @@ public class ChageBackground : MonoBehaviour
     private Coroutine coroutine;
 
     public GameObject gameOver;
+
+    public static int randomNum;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,7 +46,7 @@ public class ChageBackground : MonoBehaviour
         //SpawnManager.watingTime = SpawnManager.watingTime*0.1f;
         while (true)
         {
-            int randomNum = Random.Range(5,20);
+            randomNum = Random.Range(4,21);
             yield return new WaitForSeconds(randomNum);
            
             if (background1.activeSelf)
