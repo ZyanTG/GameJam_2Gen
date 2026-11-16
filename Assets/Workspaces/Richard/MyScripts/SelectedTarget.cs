@@ -25,8 +25,8 @@ public class SelectedTarget : MonoBehaviour
     void Start()
     {
         rigidbody.AddForce(Vector3.up*Random.Range(12,15),ForceMode.Impulse);
-        rigidbody.AddTorque(Random.Range(5,9),Random.Range(5,8),Random.Range(-12,16),ForceMode.Impulse);
-        transform.position = new Vector3(Random.Range(-9,9),-6,-1);
+        rigidbody.AddTorque(0,2,0,ForceMode.Impulse);
+        transform.position = new Vector3(Random.Range(-8,8),-2,-2);
     }
    
 
