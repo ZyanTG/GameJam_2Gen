@@ -17,10 +17,10 @@ public class PuntoFlotante : MonoBehaviour
 
     void Update()
     {
-        tiempo = tiempo + Time.deltaTime;
+        tiempo = tiempo + Time.unscaledDeltaTime; // unscaled por si el juego esta congelado
 
         // sube
-        transform.position = transform.position + Vector3.up * velocidad * Time.deltaTime;
+        transform.position = transform.position + Vector3.up * velocidad * Time.unscaledDeltaTime;
 
         // se va desvaneciendo
         texto.alpha = 1f - tiempo / duracion;

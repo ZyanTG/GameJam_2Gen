@@ -18,6 +18,7 @@ public class HUDJuego : MonoBehaviour
     public GameObject avisoCorrupto;
     public GameObject vineta;
     public EfectoGlitch glitch;
+    public AudioManager audioManager; // el de ana
 
     [Header("imagenes dia / corrupto")]
     public Sprite barraDia;
@@ -41,11 +42,23 @@ public class HUDJuego : MonoBehaviour
         avisoCorrupto.SetActive(false);
         vineta.SetActive(false);
         estabaCorrupto = !fondoNormal.activeSelf;
+
+        // sonido del mundo normal al empezar
+        if (audioManager != null)
+        {
+            audioManager.PlayWhiteWorldAmbience();
+        }
     }
 
     void Update()
     {
         LeerPuntaje();
+
+        // si ya toco la bomba la barra se queda quieta
+        if (SelectedTarget.touchBomb)
+        {
+            return;
+        }
 
         // si el fondo normal se apaga es porque estamos en el mundo corrupto
         bool corrupto = !fondoNormal.activeSelf;
@@ -109,11 +122,20 @@ public class HUDJuego : MonoBehaviour
             barra.sprite = barraCorrupto;
             relleno.sprite = rellenoCorrupto;
             StartCoroutine(MostrarAviso());
+            if (audioManager != null)
+            {
+                audioManager.PlayWorldGlitch(); // el sonido de ana para el mundo malo
+                audioManager.PlayDarkWorldAmbience();
+            }
         }
         else
         {
             barra.sprite = barraDia;
             relleno.sprite = rellenoDia;
+            if (audioManager != null)
+            {
+                audioManager.PlayWhiteWorldAmbience();
+            }
         }
 
         vineta.SetActive(corrupto);
