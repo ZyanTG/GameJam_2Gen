@@ -2359,8 +2359,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 98.5, y: -104}
-  m_SizeDelta: {x: 209, y: 44}
+  m_AnchoredPosition: {x: 98.5, y: -104.0}
+  m_SizeDelta: {x: 499, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981275202
 MonoBehaviour:
@@ -2382,7 +2382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xB7 UI y efectos"
+  m_text: "· Diseño y Programación UI/UX"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20ac8fe59cbad4d7f97e148081e33c63, type: 2}
   m_sharedMaterial: {fileID: -8407355289712766536, guid: 20ac8fe59cbad4d7f97e148081e33c63, type: 2}
@@ -2496,8 +2496,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 59.5, y: 80}
-  m_SizeDelta: {x: 343, y: 44}
+  m_AnchoredPosition: {x: 59.5, y: 80.0}
+  m_SizeDelta: {x: 493, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995199792
 MonoBehaviour:
@@ -2519,7 +2519,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xB7 Fondos y objetos 3D"
+  m_text: "· Dirección de Arte y Narrativa"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20ac8fe59cbad4d7f97e148081e33c63, type: 2}
   m_sharedMaterial: {fileID: -8407355289712766536, guid: 20ac8fe59cbad4d7f97e148081e33c63, type: 2}
@@ -3300,7 +3300,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -180.39996, y: 77.95001}
+  m_AnchoredPosition: {x: -254.9, y: 77.95}
   m_SizeDelta: {x: 110.4, y: 57.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1158206967
@@ -3750,7 +3750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -113.849976, y: -105.70001}
+  m_AnchoredPosition: {x: -258.35, y: -105.7}
   m_SizeDelta: {x: 188.3, y: 57.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444222561
@@ -3825,8 +3825,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.5, y: -12}
-  m_SizeDelta: {x: 349, y: 44}
+  m_AnchoredPosition: {x: 65.0, y: -12.0}
+  m_SizeDelta: {x: 518, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447925965
 MonoBehaviour:
@@ -3848,7 +3848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xB7 Producci\xF3n y GitHub"
+  m_text: "· Producción, Integración y Build"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20ac8fe59cbad4d7f97e148081e33c63, type: 2}
   m_sharedMaterial: {fileID: -8407355289712766536, guid: 20ac8fe59cbad4d7f97e148081e33c63, type: 2}
@@ -4573,7 +4573,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183.84998, y: -13.75}
+  m_AnchoredPosition: {x: -267.85, y: -13.75}
   m_SizeDelta: {x: 117.9, y: 57.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1777101635
@@ -4948,7 +4948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -101.89996, y: 170.30002}
+  m_AnchoredPosition: {x: -240.4, y: 170.3}
   m_SizeDelta: {x: 197.4, y: 57.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963285660
@@ -5235,8 +5235,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 104.5, y: 172}
-  m_SizeDelta: {x: 187, y: 44}
+  m_AnchoredPosition: {x: 104.5, y: 172.0}
+  m_SizeDelta: {x: 465, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134480481
 MonoBehaviour:
@@ -5258,7 +5258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xB7 Mec\xE1nicas"
+  m_text: "· Programación de Gameplay"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 20ac8fe59cbad4d7f97e148081e33c63, type: 2}
   m_sharedMaterial: {fileID: -8407355289712766536, guid: 20ac8fe59cbad4d7f97e148081e33c63, type: 2}
