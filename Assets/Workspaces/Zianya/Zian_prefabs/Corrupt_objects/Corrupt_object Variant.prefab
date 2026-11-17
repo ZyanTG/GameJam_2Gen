@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 5233881202599383593}
   - component: {fileID: 1231573729835728455}
   - component: {fileID: 7074998870680461578}
-  - component: {fileID: 4891376251674581876}
-  - component: {fileID: 7665819524682357800}
   m_Layer: 0
   m_Name: Skull
   m_TagString: Untagged
@@ -30,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2775497176669841763}
@@ -92,53 +90,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4891376251674581876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043528733006889420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRotating: 1
-  rotateX: 0
-  rotateY: 1
-  rotateZ: 0
-  rotationSpeed: 85.67
-  isFloating: 1
-  useEasingForFloating: 1
-  floatHeight: 1.93
-  floatSpeed: 0.4
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 1.3000001, y: 1.3000001, z: 1.3000001}
-  isScaling: 1
-  useEasingForScaling: 1
-  scaleLerpSpeed: 1.11
---- !u!135 &7665819524682357800
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043528733006889420}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 1.21
-  m_Center: {x: 0.000018894672, y: -0.012833327, z: 0.040630043}
 --- !u!1001 &2860189565613682281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,6 +141,10 @@ PrefabInstance:
     - target: {fileID: 90322941256318739, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
       propertyPath: m_Name
       value: Corrupt_object Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499285716807864586, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
+      propertyPath: particleSystem
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
