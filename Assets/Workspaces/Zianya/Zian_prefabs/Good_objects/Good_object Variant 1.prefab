@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2621307807132176764}
   - component: {fileID: 2888464875069686472}
   - component: {fileID: 3095686985106209658}
-  - component: {fileID: 5512643953857457570}
   m_Layer: 0
   m_Name: BluePotion
   m_TagString: Untagged
@@ -29,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8778829338536469908}
@@ -91,32 +90,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5512643953857457570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277816825105002979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRotating: 1
-  rotateX: 0
-  rotateY: 1
-  rotateZ: 0
-  rotationSpeed: 85.67
-  isFloating: 1
-  useEasingForFloating: 1
-  floatHeight: 1.93
-  floatSpeed: 0.4
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 1.1, y: 1.1, z: 1.1}
-  isScaling: 1
-  useEasingForScaling: 1
-  scaleLerpSpeed: 1.11
 --- !u!1001 &8368464742538141803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -173,15 +146,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: Good_object Variant 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4003758241981458956, guid: 5ef901fb72648104cbb79aec47ca82ed, type: 3}
+      propertyPath: m_Radius
+      value: 0.52
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4003758241981458956, guid: 5ef901fb72648104cbb79aec47ca82ed, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2112581916669291658, guid: 5ef901fb72648104cbb79aec47ca82ed, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1006106590507664895, guid: 5ef901fb72648104cbb79aec47ca82ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2621307807132176764}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2667231878193980578, guid: 5ef901fb72648104cbb79aec47ca82ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 546911705729809151}
   m_SourcePrefab: {fileID: 100100000, guid: 5ef901fb72648104cbb79aec47ca82ed, type: 3}
+--- !u!1 &5846001184640615625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2667231878193980578, guid: 5ef901fb72648104cbb79aec47ca82ed, type: 3}
+  m_PrefabInstance: {fileID: 8368464742538141803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &546911705729809151
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846001184640615625}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.38
+  m_Height: 1.17
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.17, z: 0}
 --- !u!4 &8778829338536469908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1006106590507664895, guid: 5ef901fb72648104cbb79aec47ca82ed, type: 3}
