@@ -3,9 +3,15 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+
+    
     [Header("Audio Sources")]
     public AudioSource musicSource;
     public AudioSource sfxSource;
+
+    [Range(0f, 1f)]
+    public float sfxVolume = 0.3f;
+
 
     [Header("Ambient Sounds")]
     public AudioClip mainMenuAmbience;
@@ -96,6 +102,6 @@ public class AudioManager : MonoBehaviour
     {
         if (clip == null) return;
 
-        sfxSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(clip, sfxVolume);
     }
 }
