@@ -99,6 +99,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 87227262066214666, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 87227262066214666, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 87227262066214666, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 87227262066214666, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -149,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 4499285716807864586, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
       propertyPath: particleSystem
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4758139293545943008, guid: c7ad2532a6eeb40b59033c75e71fa054, type: 3}
     - target: {fileID: 5392965579988166258, guid: 03409d23ac10a6e49abb33a89798bed1, type: 3}
       propertyPath: m_Radius
       value: 0.62
